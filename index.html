@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/mobile-icon.png">
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
+      <span class="rec-decor" aria-hidden="true">REC</span>
+      <nav class="header__theme-menu" role="menu">
+        <ul class="header__theme-menu-list" role="tablist">
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_light"
+              role="tab"
             >
               День
             </button>
@@ -22,6 +34,7 @@
             <button
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
+              role="tab"
             >
               Авто
             </button>
@@ -29,12 +42,64 @@
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
+              role="tab"
             >
               Неон
             </button>
           </li>
         </ul>
       </nav>
+      <h1 class="header-title">no focus</h1>
+      <div class="header-text title-decor">
+        <p>Что делать, когда не можешь делать ничего</p>
+        <p>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      </div>
     </header>
+    <main class="main">
+      <section class="section section-why">
+        <h3 class="section-title">Почему сосредоточиться так сложно</h3>
+        <article class="card">
+          <h4 class="card-title">Многозадачность</h4>
+          <p class="card-text"></p>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Дофамин</h4>
+        </article>
+      </section>
+      <section class="section section-what">
+        <h3 class="section-title">Что снижает концентрацию внимания?</h3>
+        <article class="card">
+          <h4 class="card-title">Концентрация</h4>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Еда</h4>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Гаджеты</h4>
+        </article>
+      </section>
+      <section class="section section-how">
+        <h3 class="section-title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h3>
+        <p class="title-decor">5 простых (на самом деле не очень) советов</p>
+        <article class="card">
+          <h4 class="card-title">Представьте небо и облака</h4>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Включите музыку</h4>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Прогуляйтесь</h4>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Хорошо ешьте</h4>
+        </article>
+        <article class="card">
+          <h4 class="card-title">Читайте</h4>
+        </article>
+      </section>
+      <section class="section section-gallery">
+        <h3 class="section-title">А можно в картинках?</h3>
+      </section>
+    </main>
   </body>
 </html>
