@@ -8,6 +8,7 @@
   --background-img: url(../images/cover-image-dark.png);
 
   --background-color: rgb(0, 0, 40);
+  --base-text-color: rgb(241, 178, 206);
   --header-title-color: rgb(219, 0, 255);
   --accent-color: rgb(255, 0, 112);
   --accent-color-transparent: rgba(255, 0, 112, 0.4);
@@ -20,11 +21,27 @@
   --corner-top: 10px;
   --corner-bottom: 10px;
 
+  --main-margin-top-bottom: 40px 0;
+  --section-margin-bottom: 50px;
+  --section-gap: 20px;
+  --section-gallery-gap: 10px;
+  --cards-gap: 20px;
+  --card-gap: 10px;
+
   --font-family: 'IBM Plex mono';
   --font-size: 18px;
-  --font-weight: regular;
+  --base-font-weight: regular;
+  --accent-font-weight: bold;
   --line-height: 23.4px;
-  --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);   /* возможно это надо в медиазапрос*/
+  --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+@media (width > 768px) {
+
+}
+
+@media (width > 1024px) {
+  
 }
 
 
