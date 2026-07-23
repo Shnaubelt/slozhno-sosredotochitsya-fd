@@ -10,12 +10,15 @@
   --background-color: rgb(0, 0, 40);
   --base-text-color: rgb(241, 178, 206);
   --header-title-color: rgb(219, 0, 255);
+  --section-title-color: rgb(255, 0, 112);
   --accent-color: rgb(255, 0, 112);
+  --nav-color: rgb(255, 0, 112);
   --accent-color-transparent: rgba(255, 0, 112, 0.4);
   --accent-text-color: rgb(0, 0, 40);
 
   --padding-inline: 10px;
   --header-paddin-top: 75px;
+  --header__theme-menu-align: end;
   --rec-decor-top: 10px;
   --rec-decor-right: 8px;
   --corner-top: 10px;
@@ -24,9 +27,11 @@
   --main-margin-top-bottom: 40px 0;
   --section-margin-bottom: 50px;
   --section-column-gap: 20px;
+  --section-row-gap: 20px;
   --section-gallery-gap: 10px;
   --section-gallery-grid-template-rows: repeat(6, min-content);
-  --cards-gap: 20px;
+  --cards-column-gap: 20px;
+  --cards-row-gap: 20px;
   --card-gap: 10px;
 
   --font-family: 'IBM Plex mono';
@@ -74,6 +79,7 @@
 
     --header-title-margin-top: 42px;
     --header-title-margin-left: -20px;
+    --header-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
     --header-text-max-width: 364px;
     --header-text-margin-top: -12px;
@@ -107,9 +113,9 @@
     grid-column: 2 / 4;
   }
 
-  .section-what {
+  /*.section-what {
     row-gap: 20px;
-  }
+  }*/
 
   .section-what .cards {
     grid-column: 1 /4;
@@ -130,7 +136,52 @@
 }
 
 @media (width >= 1024px) {
-  
+  :root {
+    --header-paddin-top: 20px;
+    --header__theme-menu-align: center;
+    --header-title-margin-top: 93px;
+    --header-text-max-width: 491px;
+    --header-text-margin-top: 53px;
+
+    --section-column-gap: 20px;
+    --section-row-gap: 0;
+    
+  }
+
+  .header__theme-menu-list {
+    grid-template-columns: repeat(3, min-content);
+  }
+
+  .section-what {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content 1fr;
+  }
+
+  .section-what .cards {
+    column-gap: 16px;
+  }
+
+  .section-what .cards .card-concentration {
+    grid-template-rows: min-content 1fr;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .section-what .cards .card-food {
+    grid-template-rows: min-content 1fr;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .section-what .cards .card-gadgets {
+    grid-template-rows: min-content 1fr;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .section-how .cards {
+    margin-top: -27px;
+  }
 }
 
 
